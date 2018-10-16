@@ -10,12 +10,12 @@ class LibraryTester(Checks):
 #	self.require("Book.java")
 #	self.require("Patron.java")
 	
-    @check()
+    @check("exists")
     def compiles(self):
         """LibraryTester.java compiles"""
         self.spawn("javac LibraryTester.java").exit(0)
 
-    @check()
+    @check("compiles")
     def test1(self):
         """Correctly Outputs"""
         self.spawn("java LibraryTester").stdout("true\n", "true\n").stdout("true\n", "true\n").stdout("false\n", "false\n").exit(0)
