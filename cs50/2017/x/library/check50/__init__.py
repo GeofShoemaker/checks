@@ -3,10 +3,10 @@ from check50 import *
 
 class LibraryTester(Checks):
 
-    @check()
-    def exists(self):
-	"""Library/"""
-	self.require("Library/")	
+    #@check()
+    #def exists(self):
+	#"""Library/"""
+	#self.require("Library/")	
 	
 	
     @check()
