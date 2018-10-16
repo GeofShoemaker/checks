@@ -6,7 +6,7 @@ class LibraryTester(Checks):
     @check()
     def exists(self):
 	"""Library"""
-	#self.require("Library")	
+	self.require("Library")	
 	
 	
     @check()
