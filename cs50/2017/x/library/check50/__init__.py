@@ -3,9 +3,9 @@ from check50 import *
 
 class LibraryTester(Checks):
 
-    #@check()
-    #def exists(self):
-    #    """LibraryTester.java, Book.java, and Patron.java exists"""
+    @check()
+    def exists(self):
+        """Library/"""
 	#self.require("LibraryTester.java, Book.java, Patron.java")
 	#self.require("Book.java")
 	#self.require("Patron.java")
