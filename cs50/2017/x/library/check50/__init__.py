@@ -21,3 +21,4 @@ class LibraryTester(Checks):
         self.spawn("java LibraryTester").stdout("true\ntrue\ntrue\nfalse\n", "true\ntrue\ntrue\nfalse\n").exit(0)
 
     
+#My version
