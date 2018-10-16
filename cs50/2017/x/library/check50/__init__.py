@@ -19,5 +19,6 @@ class LibraryTester(Checks):
     def test1(self):
         """Correctly Outputs"""
         self.spawn("java LibraryTester").stdout("true\n", "true\n").stdout("true\n", "true\n").stdout("false\n", "false\n").exit(0)
+#My version
 
     
