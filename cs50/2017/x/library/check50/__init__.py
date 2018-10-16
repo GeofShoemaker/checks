@@ -5,6 +5,8 @@ class LibraryTester(Checks):
 
     @check()
     def exists(self):
+	"""Library/"""
+	self.require("Library")	
 	"""Library/Book.java"""
 	self.require("Book.java")
 	"""Patron.java"""
