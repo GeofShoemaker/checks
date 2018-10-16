@@ -7,15 +7,9 @@ class LibraryTester(Checks):
     def exists(self):
 	"""Library/"""
 	#self.require("Library/")	
-	#"""Library/Book.java"""
-	#self.require("Book.java")
-	#"""Patron.java"""
-        #self.require("Patron.java")
-	#"""LibraryTester.java"""
-	#self.require("LibraryTester.java")
 	
 	
-    @check()
+    @check(exists)
     def compiles(self):
         """LibraryTester.java compiles"""
         self.spawn("javac LibraryTester.java Book.java Patron.java").exit(0)
